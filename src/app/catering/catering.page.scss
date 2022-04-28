@@ -1,0 +1,226 @@
+ion-header {
+    ion-label{
+      font-size:13px;
+      font-family: "regular";
+     }
+    background: transparent;
+    ion-item {
+      --background: transparent;
+      ion-avatar {
+        background: white;
+      }
+    }
+  }
+
+  ion-content {
+    * {
+      font-family: "regular";
+    }
+
+    .title {
+      font-family: "regular";
+    }
+    .icon_title {
+      font-family: "regular";
+    }
+
+    .main-header {
+      height:26vh;
+      width: 150%;
+      background: linear-gradient(45deg, var(--ion-color-tertiary) 30%, var(--ion-color-primary) 100%);
+      box-shadow: 0 1px 30px var(--ion-color-light);
+      border-radius: 0 0 50% 50%;
+      margin-left: -14vh;
+      margin-top: -60px;
+    }
+    ion-grid {
+      width: 100%;
+      position: absolute;
+      top: 35px;
+      left: 0;
+      transform: translateY(10vh);
+      padding-bottom: 8vh;
+      ion-row {
+        ion-col {
+          ion-label {
+            ion-note {
+              font-size: 0.7rem;
+            }
+            ion-chip {
+              ion-label {
+                position: absolute;
+                font-size: 1.4rem;
+                font-weight: bold;
+                letter-spacing: 0.5px;
+                text-shadow: 1px 1px 1px var(--ion-color-medium);
+              }
+            }
+            b {
+              font-size: 1.2rem;
+            }
+          }
+          ion-button {
+            height: 3em !important;
+            transform: translateY(10%);
+            text-transform: none;
+            ion-text {
+              font-size: 0.7rem;
+              font-weight: bold;
+              text-shadow: 1px 1px 1px var(--ion-color-medium);
+            }
+            ion-icon {
+              font-size: 1rem;
+            }
+          }
+          ion-card {
+            box-shadow: -1px 11px 10px -6px rgb(247, 179, 78);
+            border-radius: 5px !important;
+            margin:5px 5px;
+            ion-thumbnail {
+              width:10vh;
+              height:10vh;
+              border-radius: 10px;
+              img {
+                width: 10vh;
+                height:10vh;
+                transform: translateY(10%);
+              }
+            }
+            ion-card-content {
+              ion-label {
+                font-weight: regular;
+                text-shadow: 1px 1px 1px var(--ion-color-medium);
+                letter-spacing: 0.5px;
+              }
+            }
+          }
+        }
+      }
+      ion-list {
+        background: transparent;
+        ion-item {
+          width: 95%;
+          margin: auto;
+          border-radius: 5px;
+          margin-bottom: 2vh;
+          p {
+            font-size: 0.65rem;
+          }
+          ion-text {
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  /*
+    Authors : bunchdevelopers (Rahul Jograna)
+    Website : https://bunchdevelopers.com/
+    App Name : ionic6Template Pack
+    This App Template Source code is licensed as per the
+    terms found in the Website https://bunchdevelopers.com/license
+    Copyright and Good Faith Purchasers © 2021-present bunchdevelopers.
+  */
+  ion-header {
+    ion-toolbar {
+      ion-title {
+        padding: 0px;
+        font-family: "regular";
+      }
+      ion-buttons {
+        padding: 5px 2px 5px 2px;
+        margin: 10px;
+        ion-button {
+          height: 40px;
+          width: 40px;
+          border: 1px solid lightgray;
+          --border-radius: 50%;
+          border-radius: 50%;
+          ion-icon {
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+  
+  .item_div {
+    ion-row {
+      .scroll_div {
+        overflow: scroll;
+        .item {
+          width: max-content;
+          display: flex;
+          flex-direction: row;
+          ion-chip {
+            height: 50px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+  
+  .main_content {
+    padding: 10px;
+    border-radius: 10px;
+    ion-row {
+      ion-col {
+        .img {
+          height: 90px;
+          width: 90px;
+          border-radius: 10px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .title {
+          font-family: 'regular';
+          display: flex;
+          flex-direction: column;
+          margin-top: 12px;
+          .ttl {
+            font-family: "bold";
+            font-size: 16px;
+           
+          }
+          .sub_ttl1 {
+            font-family: 'regular';
+            font-size: 13px;
+            margin: 3px 0px 3px 0px;
+            color: rgb(10, 1, 1);
+          }
+          .sub_ttl {
+            font-family: 'regular';
+            font-size: 13px;
+            margin: 3px 0px 3px 0px;
+            color: rgb(8, 0, 0);
+          }
+
+          .icon_title {
+
+            display: flex;
+            align-items: center;
+            color: #ff7c31;
+            margin: 2px 0px 2px 0px;
+            ion-icon {
+              font-family: 'regular';
+              font-size: 20px;
+              margin-right: 5px;
+            }
+            ion-label {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .line {
+      width: 100%;
+      border-bottom: 1px solid rgb(211, 211, 211);
+      margin: 20px 0px 0px 0px;
+    }
+  }
+  
+  
+  
+  }

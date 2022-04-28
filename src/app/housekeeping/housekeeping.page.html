@@ -1,0 +1,78 @@
+<ion-header class="ion-no-border">
+  <ion-item lines="none">
+    <ion-buttons slot="start">
+      <ion-button (click)="util.openSideMenu()">
+        <ion-icon name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-label color="light">
+   Menu House Keeping
+  </ion-label>
+  <ion-buttons slot="end">
+    <ion-icon (click)="onBack()" name="arrow-undo"></ion-icon>
+  </ion-buttons>
+  </ion-item>
+ </ion-header>
+ 
+<ion-content [fullscreen]="true" color="light">
+  <div class="main-header"></div>
+  <ion-grid><br>
+    <ion-note color="light" class="ion-margin-start">
+      <b></b> 
+     </ion-note> 
+<br>
+<br>
+     
+        <div class="main_content" *ngFor="let item of aduanhkeeping" (click)="openAdhkeeping()">
+          <ion-row>
+            <ion-col size="5"><br>
+              <div class="img" [style.backgroundImage]="'url(assets/svg/online-survey.svg)'"></div>
+            </ion-col>
+            <ion-col size="7">
+              <div class="title">
+                <ion-label color="dark" class="ttl">Aduan House Keeping</ion-label>
+                <ion-label class="sub_ttl1">Form Isian Aduan Pelayanan House Keeping</ion-label>
+                <div class="icon_title">
+                  <ion-icon slot="start" name="star"></ion-icon>
+                  <ion-label color="dark" >Aduan Anda</ion-label>
+                </div>
+                <div class="icon_title">
+                  <ion-icon slot="start" name="location-sharp"></ion-icon>
+                  <ion-label color="dark">Deskripsi dan Lokasi</ion-label>
+                </div>
+              </div>
+            </ion-col>
+          </ion-row>
+         <div class="line"></div>
+         </div>
+
+          <div class="main_content" *ngFor="let item of tugas" (click)="openTugas()">
+          <ion-row>
+            <ion-col size="5"><br>
+              <div class="img" [style.backgroundImage]="'url(assets/svg/chat-favorite.svg)'"></div>
+              </ion-col>
+              <ion-col size="7">
+                <div class="title">
+                  <ion-label class="ttl">Tugas House Keeping</ion-label>
+                  <ion-label class="sub_ttl">Silahkan Checklist Tugas Anda </ion-label>
+                  <div class="icon_title">
+                    <div class="rate">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+                  <div class="icon_title">
+                    <ion-icon slot="start" name="location-sharp"></ion-icon>
+                    <ion-label color="dark">Petunjuk?</ion-label>
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+           <div class="line"></div>
+           </div>
+          </ion-grid>
+        </ion-content>
+

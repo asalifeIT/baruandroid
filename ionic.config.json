@@ -1,0 +1,8 @@
+{
+  "name": "com.asalife.service",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,34 @@
+<ion-content>
+  <ion-header class="ion-no-border">
+    <ion-item lines="none">
+      <ion-buttons slot="start">
+        <ion-button (click)="util.openSideMenu()">
+          <ion-icon name="menu"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-label color="dark">
+      Form Aduan House Keeping
+    </ion-label>
+    <ion-buttons slot="end">
+      <ion-icon (click)="onBack()" name="arrow-undo"></ion-icon>
+    </ion-buttons>
+    </ion-item>
+   </ion-header>
+  
+   <div class="main_content ion-padding">
+    <ion-label class="sub_heading">Deskripsi</ion-label>
+    <ion-label class="sub_heading">Silahkan mengisi aduan apabila ditemukan hal-hal yang tidak berkenan</ion-label>
+      <!-- Tambahkan ini pada bagian form -->
+    <div>
+      <form class="container" [formGroup]="FormAduanHk" (ngSubmit)="submitAduanHk()">
+        <ion-item>
+          <ion-input type="text" name="lokasi" placeholder="Lokasi" formControlName="lokasi"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" name="deskripsi_aduan" placeholder="Deskripsi Aduan"  formControlName="deskripsi"></ion-input>
+        </ion-item>
+        <ion-button type="submit" expand="block" color="primary">Submit</ion-button>
+      </form>
+    </div>
+   </div>
+  </ion-content>
